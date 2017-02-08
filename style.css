@@ -4,6 +4,14 @@
 			  height:100%;*/
 			  background-color:#333;
 				}
+
+		    .purple{
+              background-color: #68268c;
+			}
+			.teal{
+				background-color: #96e4ce;
+			}
+
 			#container{
 			  width: 100vw;
 			  height:95vh;
@@ -29,15 +37,16 @@
 				  top: 50%;
 				  left: 50%;
 				  transform: translate(-50%, -50%);
-				  padding:10px;
+				  padding:40px;
 				  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
                  transition: 0.3s;
-			}.inside1-2{
+			}
+			.inside1-2{
 				text-align: center;
 				height: 20vh;
-				background-color: #96e4ce;
 				border-radius: 5px;
 			}
+			
 			.inside2{
 				width: 80%;
 				height: 80%;
@@ -56,7 +65,7 @@
 
 
            .grow { transition: all .2s ease-in-out; }
-           .grow:hover { transform: scale(1.05); }
+           .grow:hover { transform: scale(1.1); }
            .shrink { transition: all .2s ease-in-out; }
            .shrink:hover{transform: scale(0.9); }
 
