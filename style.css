@@ -32,7 +32,7 @@
 			}.inside1-2{
 				text-align: center;
 				height: 20vh;
-				background-color: black;
+				background-color: #96e4ce;
 				border-radius: 5px;
 			}
 			.inside2{
@@ -136,7 +136,7 @@
 				.btn-3 span:hover:before {height: 100%;}
 				.btn-3 span:hover:after {width: 100%;}
 
-				.btn-1 {border: 2px solid #45b19e;font-size: 16px; transition: all 0.5s ease;}
+				.btn-1 {border: 2.5px solid #45b19e;font-size: 16px; transition: all 0.5s ease;}
 				.btn-1:hover {
 				  background: #45b19e;
 				  color: #fff;
