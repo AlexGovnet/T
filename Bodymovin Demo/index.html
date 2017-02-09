@@ -6,7 +6,18 @@
     <link rel="stylesheet" href="style.css">
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <script src="js/bodymovin.js"></script>
+     <script src="js/bodymovin.min.js"></script>
+
+     <style>#bodymovin{
+            background-color:#333333;
+            width:100%;
+            height:100%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            margin: auto;
+            opacity: 1;
+        }</style>
 
 </head>
 
@@ -31,24 +42,31 @@
 		</div>
 	</div>
 	<div id="container2" class="">
-		<div class="inside2" id="bodymovin">
+		<div class="inside2" id="">
 			
 		</div>
+	</div>
+
+	<div id="bodymovin" class="">
+		
 	</div>
 
 
 	<script>
 
+     var anim;
     var animData = {
-        wrapper: document.getElementById('bodymovin'),
-        animType: 'html',
+        container: document.getElementById('bodymovin'),
+        renderer: 'svg',
         loop: true,
-        prerender: true,
         autoplay: true,
-        path: 'NIF-Animation.json'
-
+        autoloadSegments: true,
+        rendererSettings: {
+        progressiveLoad:false
+        },
+        path: 'data.json'
     };
-    var anim = bodymovin.loadAnimation(animData);
+    anim = bodymovin.loadAnimation(animData);
 </script>
 </body>
 </html>
