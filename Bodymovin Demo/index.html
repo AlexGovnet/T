@@ -8,6 +8,91 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <script src="js/bodymovin.min.js"></script>
 
+     <style>.bodymovin_style{
+            background-color:#333333;
+            width:50%;
+            height:50%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            margin: auto;
+            opacity: 1;
+        }</style>
+
+</head>
+
+<body>
+	<div id="container">
+		<div class="inside1">
+		    <div class="col-md-4">
+		          <button class="custom-btn btn-1 grow">Read More</button><br><br>
+		          <button class="custom-btn btn-2"><span>Read More</span></button><br><br>
+		          <button class="custom-btn btn-3">Read More</button><br><br>
+		          <button class="custom-btn btn-4"><span>Read More</span></button>
+		          
+		    </div>
+
+		    <div class="col-md-4 ">
+		        <div class="inside1-2 grow teal"></div>
+		    </div>
+		    <div class="col-md-4">
+		       <div class="inside1-2 shrink purple"></div>
+		    </div>
+			
+		</div>
+	</div>
+	<div id="container2" class="">
+		<div class="inside2" id="">
+			
+		</div>
+	</div>
+
+	<div id="bodymovin" class="bodymovin_style"></div>
+
+	<div id="bodymovin1" class="bodymovin_style"></div>
+
+
+	<script>
+
+     var anim;
+     var anim1;
+    var animData = {
+        container: document.getElementById('bodymovin'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        autoloadSegments: true,
+        rendererSettings: {
+        progressiveLoad:false
+        },
+        path: 'data.json'
+    };
+    anim = bodymovin.loadAnimation(animData);
+    var animData1 = {
+        container: document.getElementById('bodymovin1'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        autoloadSegments: true,
+        rendererSettings: {
+        progressiveLoad:false
+        },
+        path: 'NIF-Animation.json'
+    };
+    
+    anim1 = bodymovin.loadAnimation(animData1);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Govnet Test</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script src="js/bodymovin.min.js"></script>
+
      <style>#bodymovin{
             background-color:#333333;
             width:100%;
